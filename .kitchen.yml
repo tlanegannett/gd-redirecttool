@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  log_level: <%= ENV['CHEF_LOG_LEVEL'] || 'auto' %>
+
+platforms:
+  - name: gannett/gci-centos-72
+
+
+suites:
+  - name: default
+    run_list:
+      - recipe[gd-test-helper::default]
+      - recipe[test-redirecttoolserver::default]
+    attributes:

@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: "/Users/tlane/chef-repo/cookbooks/test-redirecttoolserver/.kitchen/kitchen-vagrant/kitchen-test-redirecttoolserver-default-gannett-gci-centos-72/.vagrant/machines/default/virtualbox/private_key"
+last_action: converge
